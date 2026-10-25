@@ -6,15 +6,77 @@
   --color-text: #404040;
   --space-card: 1rem;
   --radius-card: .5rem;
+  --button-fontweight-header: 700;
+  --button-radius: 0.25rem;
+  --form-spacing: 0.75rem;
+  --font-family: Arial, sans-serif;
 }
-body { color: #404040; background: #f1f1f1; font-family: Arial, sans-serif; line-height: 1.5; }
-header { padding: 2rem; background: #8c1d40; color: #ffffff; }
-.eyebrow { color: #ffc627; font-weight: 700; }
-main { display: grid; gap: 1rem; max-width: 70rem; margin: 2rem auto; padding: 0 1rem; }
-.card { padding: 1rem; background: #ffffff; border: 1px solid #d0d0d0; border-radius: .5rem; }
-img { display: block; max-width: 100%; height: auto; }
-a { color: #8c1d40; }
-button, .button { display: inline-block; padding: .75rem 1rem; background: #8c1d40; color: #ffffff; border-radius: .25rem; font-weight: 700; }
-form { display: grid; gap: .75rem; max-width: 28rem; }
-input { padding: .75rem; border: 1px solid #747474; }
-.theme-alt { /* TODO: redefine semantic tokens here, then consume them above. */ }
+body { 
+  color: var(--color-text); 
+  background: #f1f1f1; 
+  font-family: var(--font-family); 
+  line-height: 1.5; 
+}
+
+header { 
+  padding: 2rem; 
+  background: var(--color-action); 
+  color: var(--color-surface); 
+}
+
+.eyebrow { 
+  color: var(--color-accent); 
+  font-weight: var(--button-fontweight-header); 
+}
+
+main { 
+  display: grid; 
+  gap: var(--space-card); 
+  max-width: 70rem; 
+  margin: 2rem auto; 
+  padding: 0 1rem; 
+
+}
+.card { 
+  padding: var(--space-card); 
+  background: var(--color-surface); 
+  border: 1px solid #d0d0d0; 
+  border-radius: var(--radius-card); 
+}
+img { 
+  display: block; 
+  max-width: 100%; 
+  height: auto; 
+}
+
+a { 
+  color: var(--color-action); 
+}
+
+button, .button { 
+  display: inline-block; 
+  padding: .75rem 1rem; 
+  background: var(--color-action); 
+  color: var(--color-surface); 
+  border-radius: var(--button-radius); 
+  font-weight: var(--button-fontweight-header); 
+}
+
+form { 
+  display: grid; 
+  gap: var(--form-spacing); 
+  max-width: 28rem; 
+}
+
+input { 
+  padding: var(--form-spacing); 
+  border: 1px solid #747474; 
+}
+
+.theme-alt { 
+  /* TODO: redefine semantic tokens here, then consume them above. */ 
+  --color-surface: #ffc627;
+  --button-radius: 2rem;
+  --color-action: #404040;
+  --space-card: 2.5rem;
+}
