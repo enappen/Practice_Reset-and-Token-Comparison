@@ -1,2 +1,23 @@
 /* TODO: Build a short, justified reset. Preserve useful semantics and visible focus. */
 *, *::before, *::after { box-sizing: border-box; }
+
+:root {
+    display: grid;
+    margin: 1rem;
+}
+
+.card {
+   width: 100%;
+   max-width: 1000px;
+   padding: 1em;
+   border: 0.25rem solid #747474;
+   margin: 1rem 0 1rem 0;
+} 
+
+h2 {
+    margin: initial;
+}
+
+button {
+    margin-bottom: inherit;
+}
